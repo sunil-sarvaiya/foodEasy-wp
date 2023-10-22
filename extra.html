@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+        .card-container {
+            display: flex;
+        }
+
+        .card {
+        }
+        img{
+            height: 30vh;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .card {
+                color: white;
+              background-color: black;
+              width: 30%;
+              flex: 1;
+            max-width: calc(25% - 20px); /* 4 cards per row in large screens */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                max-width: calc(100% - 20px); /* 1 card per row in small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+         <div class="card">
+             <img src="all photos/food1.jpg" class="cardImage" alt="missing">
+            <p class="a">Berger</p><br>
+            <p class="b">Price:<span class="mrp">200</span><del class="delete">400</del></p><br>
+            <p class="b">Offer:50% off</p><br>
+            <button type="button" class="c">Add To Cart </button>
+        </div>
+    </div>
+</body>
+</html>

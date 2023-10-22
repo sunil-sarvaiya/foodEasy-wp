@@ -1,0 +1,61 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Form Styles */
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form.contact {
+    margin: 100px;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid green;
+  
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.input{
+    width: 98%;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
+
+
+}
+
+
+button[type="submit"] {
+    background-color: whitesmoke;
+    color: green;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
