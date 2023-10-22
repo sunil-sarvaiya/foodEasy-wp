@@ -1,40 +1,46 @@
-*{
-    padding: 0;
+/* Reset some default styles */
+body {
     margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
 }
-body{
-    background-color: skyblue;
-}
-.p{
-    font-size: 20px;
-    word-spacing: 2px;
-    width: 80%;
-    line-height: 1.9rem;
-    margin-top: 5rem;
-    color:red;
 
+/* Style the main container using Flexbox */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+}
+
+/* Style the image container */
+.image-container {
+    flex: 1; /* Take up half the space on large screens */
+    text-align: center; /* Center align the image */
+}
+
+/* Style the image inside image-container */
+.img-class {
+    max-width: 100%;
+    height: auto;
+}
+.title-class{
+    font-size: 32px;
+    font-weight: 700;
+    color: red;
 
 }
-.container{
- margin-left: 800px;
- margin-top: 200px;
- position: absolute;
- right: 0;
- 
-
+.desc-class{
+    margin-top: 10px;
 }
-.img{
-     height: 300px;
-     width: 600px;
-     margin-top: 200px;
-     margin-left: 50px;
-     position: absolute;
-     left: 0;
+/* Style the content container */
+.content-container {
+    flex: 1; /* Take up half the space on large screens */
+    padding: 20px;
 }
 .button {
-    margin-left: 30%;
     font-size: 20px;
     background-color: whitesmoke;
     color: green;
@@ -43,49 +49,32 @@ body{
     cursor: pointer;
     border: 2px solid green;
     border-radius: 5px;
-    width: 100%;
-
+    text-decoration: none;
 }
-
-.button {
+.button:hover {
     background-color: green;
     color: white;
 }
-
-.h1{
-    color: blue;
-
+.button-container{
+    margin-top: 30px;
+    text-align: center;
 }
+@media (max-width: 768px) and  (min-width: 400px)  {
+    .main-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .image-container,
+    .content-container {
+        flex: 1; 
+        margin: 0;
+        padding: 20px;
+    }
 
-.social{
-    letter-spacing: 20px;
-    margin-left: 150px;
-    margin-top: 10px;
-   
+    .title-class {
+        font-size: 100px !important;
+    }
+    .desc-class {
+        margin-top: 10px;
+    }
 }
-.social1 {
-    height: 35px;
-    width: 35px;
-
-
-}
-
-.social2{
-    height: 35px;
-    width: 35px;
-    
-}
-
-.social3{
-    height: 35px;
-    width: 35px;
-    
-}
-
-.social4{
-    height: 35px;
-    width: 35px;
-    
-}
-
-
